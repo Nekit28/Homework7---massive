@@ -38,20 +38,29 @@ public class Main {
         step[0] = 1;
         step[1] = 2;
         step[2] = 3;
-        for (int i = 0; i < 3; i++) {
-            System.out.print(step[i] + ", ");
+        for (int i = 0; i < step.length; i++) {
+            System.out.print(step[i]);
+            if (i != step.length -1) {
+                System.out.print(", ");
+            }
         }
         System.out.println();
         double[] jump = {1.57, 7.654, 9.986};
         jump[0] = 1.57;
-        for (int i = 0; i < 3; i++) {
-            System.out.print(" " + jump[i] + ", ");
+        for (int i = 0; i < jump.length; i++) {
+            System.out.print(jump[i]);
+            if (i != jump.length - 1) {
+                System.out.print(", ");
+            }
         }
         System.out.println();
         int[] tooth = {15, 23, 28, 32};
         tooth[0] = 15;
-        for (int i = 0; i < 4; i++) {
-            System.out.print(" " + tooth[i] + ", ");
+        for (int i = 0; i < tooth.length; i++) {
+            System.out.print(tooth[i]);
+            if (i != tooth.length - 1) {
+                System.out.print(", ");
+            }
         }
         System.out.println();
     }
@@ -61,20 +70,29 @@ public class Main {
         step[0] = 3;
         step[1] = 2;
         step[2] = 1;
-        for (int i = 0; i < 3; i++) {
-            System.out.print("," + step[i] );
-        }
+        for (int i = 0; i < step.length; i++) {
+            System.out.print(step[i] );
+            if (i != step.length - 1) {
+                System.out.print(", ");
+            }
+            }
         System.out.println();
         double[] jump = {9.986, 7.654, 1.57};
         jump[0] = 9.986;
-        for (int i = 0; i < 3; i++) {
-            System.out.print("," + jump[i] );
+        for (int i = 0; i < jump.length; i++) {
+            System.out.print(jump[i]);
+            if (i != jump.length -1) {
+                System.out.print(", ");
+            }
         }
         System.out.println();
         int[] tooth = {32, 28, 23, 15};
         tooth[0] = 32;
-        for (int i = 0; i < 4; i++) {
-            System.out.print("," + tooth[i] );
+        for (int i = 0; i < tooth.length; i++) {
+            System.out.print(tooth[i]);
+            if (i != tooth.length -1) {
+                System.out.print(", ");
+            }
         }
         System.out.println();
     }
@@ -84,7 +102,10 @@ public class Main {
         int[] hour = {0, 1, 2, 3};
         for (int i = 0; i < hour.length; i++) {
             if (hour[i] % 2 != 0) hour[i] +=1; {
-                System.out.println(hour[i]);
+                System.out.print(hour[i]);
+                if (i != hour.length -1) {
+                    System.out.print(", ");
+                }
             }
         }
 
