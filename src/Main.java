@@ -84,7 +84,7 @@ public class Main {
         int[] hour = {0, 1, 2, 3};
         for (int i = 0; i < hour.length; i++) {
             if (hour[i] % 2 != 0) hour[i] +=1; {
-                System.out.println(hour[i]);
+                System.out.print(", " + hour[i] + "");
             }
         }
 
